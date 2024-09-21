@@ -1,0 +1,14 @@
+D:\Back end\.Net\9.MVC\day_2\Task\LearningSystem\LearningSystem.DAL\bin\Debug\net8.0\LearningSystem.DAL.deps.json
+D:\Back end\.Net\9.MVC\day_2\Task\LearningSystem\LearningSystem.DAL\bin\Debug\net8.0\LearningSystem.DAL.runtimeconfig.json
+D:\Back end\.Net\9.MVC\day_2\Task\LearningSystem\LearningSystem.DAL\bin\Debug\net8.0\LearningSystem.DAL.dll
+D:\Back end\.Net\9.MVC\day_2\Task\LearningSystem\LearningSystem.DAL\bin\Debug\net8.0\LearningSystem.DAL.pdb
+D:\Back end\.Net\9.MVC\day_2\Task\LearningSystem\LearningSystem.DAL\obj\Debug\net8.0\LearningSystem.DAL.csproj.AssemblyReference.cache
+D:\Back end\.Net\9.MVC\day_2\Task\LearningSystem\LearningSystem.DAL\obj\Debug\net8.0\LearningSystem.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Back end\.Net\9.MVC\day_2\Task\LearningSystem\LearningSystem.DAL\obj\Debug\net8.0\LearningSystem.DAL.AssemblyInfoInputs.cache
+D:\Back end\.Net\9.MVC\day_2\Task\LearningSystem\LearningSystem.DAL\obj\Debug\net8.0\LearningSystem.DAL.AssemblyInfo.cs
+D:\Back end\.Net\9.MVC\day_2\Task\LearningSystem\LearningSystem.DAL\obj\Debug\net8.0\LearningSystem.DAL.csproj.CoreCompileInputs.cache
+D:\Back end\.Net\9.MVC\day_2\Task\LearningSystem\LearningSystem.DAL\obj\Debug\net8.0\LearningSystem.DAL.dll
+D:\Back end\.Net\9.MVC\day_2\Task\LearningSystem\LearningSystem.DAL\obj\Debug\net8.0\refint\LearningSystem.DAL.dll
+D:\Back end\.Net\9.MVC\day_2\Task\LearningSystem\LearningSystem.DAL\obj\Debug\net8.0\LearningSystem.DAL.pdb
+D:\Back end\.Net\9.MVC\day_2\Task\LearningSystem\LearningSystem.DAL\obj\Debug\net8.0\LearningSystem.DAL.genruntimeconfig.cache
+D:\Back end\.Net\9.MVC\day_2\Task\LearningSystem\LearningSystem.DAL\obj\Debug\net8.0\ref\LearningSystem.DAL.dll
