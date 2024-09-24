@@ -1,8 +1,66 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model LearningSystem.ViewModels.MainDashboardViewModel;
+@{
+    ViewData["Title"] = "Dashboard";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container mt-5">
+    <h2>Learning System Dashboard</h2>
+
+    <div class="row">
+        <!-- Statistics Cards -->
+        <div class="col-md-4">
+            <div class="card text-white bg-primary mb-3">
+                <div class="card-header">Total Departments</div>
+                <div class="card-body">
+                    <h5 class="card-title">@Model?.TotalDepartments</h5>
+                    <p class="card-text">Manage all courses in the system.</p>
+                    <a href="@Url.Action("Index", "Department")" class="btn btn-light">Go to Courses</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card text-white bg-secondary mb-3">
+                <div class="card-header">Total Instructors</div>
+                <div class="card-body">
+                    <h5 class="card-title">@Model?.TotalInstructor</h5>
+                    <p class="card-text">Manage all courses in the system.</p>
+                    <a href="@Url.Action("Index", "Instructor")" class="btn btn-light">Go to Courses</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card text-white bg-success mb-3">
+                <div class="card-header">Total Courses</div>
+                <div class="card-body">
+                    <h5 class="card-title">@Model?.TotalCourses</h5>
+                    <p class="card-text">Manage all courses in the system.</p>
+                    <a href="@Url.Action("Index", "Course")" class="btn btn-light">Go to Courses</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card text-white bg-info mb-3">
+                <div class="card-header">Total Trainees</div>
+                <div class="card-body">
+                    <h5 class="card-title">@Model?.TotalTrainee</h5>
+                    <p class="card-text">Manage all courses in the system.</p>
+                    <a href="@Url.Action("Index", "Trainee")" class="btn btn-light">Go to Courses</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent Activities -->
+    <div class="mt-4">
+        <h3>Recent Added Features</h3>
+        <ul class="list-group">
+            @foreach (var activity in Model?.RecentAddedFeatures)
+            {
+                <li class="list-group-item">@activity</li>
+            }
+        </ul>
+    </div>
 </div>

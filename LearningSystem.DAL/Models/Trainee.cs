@@ -11,7 +11,7 @@ namespace LearningSystem.DAL
 
         public string ImageUrl { set; get; }    
 
-        public string Address { set; get; }
+        public string address { set; get; }
 
 
         // Many-to-One with Department

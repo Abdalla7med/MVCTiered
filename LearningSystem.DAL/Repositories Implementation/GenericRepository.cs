@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace LearningSystem.DAL
 {
-    public class GenericRepository<TEntity> : IRepository<TEntity> where TEntity : class
+    public class GenericRepository<TEntity> : IRepository<TEntity> where TEntity : class, new()
     {
         protected readonly LearningPlatformContext _context;
         private readonly DbSet<TEntity> _dbSet;
@@ -26,7 +26,7 @@ namespace LearningSystem.DAL
 
         public async Task<TEntity> GetByIdAsync(int id)
         {
-            return await _dbSet.FindAsync(id);
+            return await _dbSet.FindAsync(id) ?? new TEntity();
         }
 
         public async Task AddAsync(TEntity entity)
@@ -49,6 +49,11 @@ namespace LearningSystem.DAL
                 _dbSet.Remove(entity);
                 await _context.SaveChangesAsync();
             }
+        }
+
+        public async Task<int> NumberOfEntitiesAsync()
+        {
+            return await _dbSet.CountAsync();
         }
     }
 

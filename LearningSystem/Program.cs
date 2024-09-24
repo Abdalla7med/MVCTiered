@@ -1,4 +1,6 @@
+using LearningSystem.DAL;
 using LearningSystem.DAL.Context;
+using LearningSystem.DAL.Repositories_Implementation;
 using Microsoft.EntityFrameworkCore;
 
 namespace LearningSystem
@@ -16,6 +18,15 @@ namespace LearningSystem
                 options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")
                 ));
+
+            /// DI Registration
+            
+            builder.Services.AddScoped<IInstructorRepository, InstructorRepository>();
+            builder.Services.AddScoped<ICourseRepository, CourseRepository>();
+            builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+            builder.Services.AddScoped<ICourseResultRepository, CourseResultRepository>();
+            builder.Services.AddScoped<ITraineeRepository, TraineeRepository>();
+
 
             var app = builder.Build();
 

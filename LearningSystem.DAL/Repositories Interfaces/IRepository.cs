@@ -7,11 +7,13 @@ using System.Threading.Tasks;
 namespace LearningSystem.DAL;
     public interface IRepository<TEntity> where TEntity : class
     {
+        Task<int> NumberOfEntitiesAsync();
         Task<IEnumerable<TEntity>> GetAllAsync();
         Task<TEntity> GetByIdAsync(int id);
         Task AddAsync(TEntity entity);
         Task UpdateAsync(TEntity entity);
         Task DeleteAsync(int id);
+        
     }
 
 

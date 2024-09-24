@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LearningSystem.DAL.Repositories_Implementation
 {
-    public class DepartmentRepository:GenericRepository<Department>
+    public class DepartmentRepository:GenericRepository<Department>,IDepartmentRepository
     {
         public DepartmentRepository(LearningPlatformContext context):base(context) { }
     }

@@ -1,0 +1,57 @@
+﻿@model IEnumerable<LearningSystem.DAL.Instructor>
+
+@{
+    ViewData["Title"] = "Instructors";
+}
+
+<h1>Instructors</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Add New Instructor</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            @* public string Name { get; set; }
+            public string ImageURL { get; set; }
+            public double Salary { set; get; }
+            public string address { set; get; } *@
+            <th>Name</th>
+            <th>ImageURL</th>
+            <th>Salary</th>
+            <th>Address</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>
+                    <img src="@Url.Content(item.ImageURL)" alt="@item.Name" width="100" />
+                </td>
+                <td>@item.Salary</td>
+                <td>@item.address</td>
+                
+                @* <td>
+                    <select class="form-control">
+                        <option value="">Courses he teaches</option> <!-- Placeholder -->
+                        @foreach (var course in item.Courses)
+                        {
+                            <option value="@course.Id">@course.Name</option>
+                        }
+                    </select>
+                </td> *@
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script>
+    $(document).ready(function () {
+        $('select').select2();
+    });
+</script>
+
