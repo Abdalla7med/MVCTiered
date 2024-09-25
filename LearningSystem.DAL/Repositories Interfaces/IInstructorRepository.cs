@@ -8,7 +8,7 @@ namespace LearningSystem.DAL
 {
     public interface IInstructorRepository:IRepository<Instructor>
     {
-
+        
     }
 
 }

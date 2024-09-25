@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LearningSystem.DAL
 {
@@ -8,9 +9,10 @@ namespace LearningSystem.DAL
         public int Id { get; set; }
         public string Name { get; set; }
         public string ImageURL { get; set; }
+
+        [DataType(DataType.Currency)]
         public double Salary { set; get; }
         public string address { set; get; }
-
 
         // Foreign key and navigation property
         public int? DepartmentId { get; set; }  // Explicit foreign key for Department
@@ -18,6 +20,6 @@ namespace LearningSystem.DAL
 
         // Navigation property for courses
         // one-to-many with course
-        public ICollection<Course> Courses { get; set; }
+        public ICollection<Course> Courses { get; set; } = new List<Course>();
     }
 }

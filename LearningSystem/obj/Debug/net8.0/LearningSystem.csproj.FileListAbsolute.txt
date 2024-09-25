@@ -128,3 +128,9 @@ D:\Back end\.Net\9.MVC\day_2\Task\LearningSystem\LearningSystem\bin\Debug\net8.0
 D:\Back end\.Net\9.MVC\day_2\Task\LearningSystem\LearningSystem\obj\Debug\net8.0\LearningSystem.csproj.AssemblyReference.cache
 D:\Back end\.Net\9.MVC\day_2\Task\LearningSystem\LearningSystem\obj\Debug\net8.0\Learning.B54FED2A.Up2Date
 D:\Back end\.Net\9.MVC\day_2\Task\LearningSystem\LearningSystem\obj\Debug\net8.0\LearningSystem.sourcelink.json
+D:\Back end\.Net\9.MVC\day_2\Task\LearningSystem\LearningSystem\bin\Debug\net8.0\AutoMapper.dll
+D:\Back end\.Net\9.MVC\day_2\Task\LearningSystem\LearningSystem\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Back end\.Net\9.MVC\day_2\Task\LearningSystem\LearningSystem\bin\Debug\net8.0\BLL.dll
+D:\Back end\.Net\9.MVC\day_2\Task\LearningSystem\LearningSystem\bin\Debug\net8.0\Common.dll
+D:\Back end\.Net\9.MVC\day_2\Task\LearningSystem\LearningSystem\bin\Debug\net8.0\BLL.pdb
+D:\Back end\.Net\9.MVC\day_2\Task\LearningSystem\LearningSystem\bin\Debug\net8.0\Common.pdb

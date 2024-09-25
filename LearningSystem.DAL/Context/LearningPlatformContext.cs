@@ -37,6 +37,9 @@ namespace LearningSystem.DAL.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
+            modelBuilder.Entity<Instructor>()
+            .HasIndex(i => i.DepartmentId)  // Remove .IsUnique() to allow duplicates
+            .IsUnique(false);  // This line ensures the uniqueness is removed
             // one-to-many relation between course and instructor
 
             modelBuilder.Entity<Course>().

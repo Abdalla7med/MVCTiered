@@ -19,14 +19,14 @@ namespace LearningSystem.DAL
             _dbSet = _context.Set<TEntity>();
         }
 
-        public async Task<IEnumerable<TEntity>> GetAllAsync()
+        public virtual async Task<IEnumerable<TEntity>> GetAllAsync()
         {
             return await _dbSet.ToListAsync();
         }
 
         public async Task<TEntity> GetByIdAsync(int id)
         {
-            return await _dbSet.FindAsync(id) ?? new TEntity();
+            return await _dbSet.FindAsync(id);
         }
 
         public async Task AddAsync(TEntity entity)
@@ -43,13 +43,25 @@ namespace LearningSystem.DAL
 
         public async Task DeleteAsync(int id)
         {
-            var entity = await GetByIdAsync(id);
-            if (entity != null)
+            try
             {
+                var entity = await _dbSet.FindAsync(id);
+                if (entity == null)
+                {
+                    throw new InvalidOperationException("Entity not found.");
+                }
+
                 _dbSet.Remove(entity);
                 await _context.SaveChangesAsync();
             }
+            catch (DbUpdateConcurrencyException ex)
+            {
+                // Handle concurrency exception
+                Console.WriteLine("Concurrency conflict occurred: " + ex.Message);
+                throw;
+            }
         }
+
 
         public async Task<int> NumberOfEntitiesAsync()
         {

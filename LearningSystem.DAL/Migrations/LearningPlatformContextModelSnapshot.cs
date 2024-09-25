@@ -198,7 +198,7 @@ namespace LearningSystem.DAL.Migrations
                             Id = 1,
                             CourseId = 1,
                             Grade = 90.5m,
-                            GradeDate = new DateTime(2024, 9, 23, 23, 35, 13, 317, DateTimeKind.Local).AddTicks(8358),
+                            GradeDate = new DateTime(2024, 9, 24, 23, 41, 27, 346, DateTimeKind.Local).AddTicks(8962),
                             GradeLetter = "A",
                             TraineeId = 1
                         },
@@ -207,7 +207,7 @@ namespace LearningSystem.DAL.Migrations
                             Id = 2,
                             CourseId = 2,
                             Grade = 85.0m,
-                            GradeDate = new DateTime(2024, 9, 23, 23, 35, 13, 317, DateTimeKind.Local).AddTicks(8495),
+                            GradeDate = new DateTime(2024, 9, 24, 23, 41, 27, 346, DateTimeKind.Local).AddTicks(9111),
                             GradeLetter = "B",
                             TraineeId = 2
                         },
@@ -216,7 +216,7 @@ namespace LearningSystem.DAL.Migrations
                             Id = 3,
                             CourseId = 3,
                             Grade = 78.5m,
-                            GradeDate = new DateTime(2024, 9, 23, 23, 35, 13, 317, DateTimeKind.Local).AddTicks(8510),
+                            GradeDate = new DateTime(2024, 9, 24, 23, 41, 27, 346, DateTimeKind.Local).AddTicks(9134),
                             GradeLetter = "C",
                             TraineeId = 3
                         },
@@ -225,7 +225,7 @@ namespace LearningSystem.DAL.Migrations
                             Id = 4,
                             CourseId = 4,
                             Grade = 88.0m,
-                            GradeDate = new DateTime(2024, 9, 23, 23, 35, 13, 317, DateTimeKind.Local).AddTicks(8523),
+                            GradeDate = new DateTime(2024, 9, 24, 23, 41, 27, 346, DateTimeKind.Local).AddTicks(9153),
                             GradeLetter = "B",
                             TraineeId = 4
                         },
@@ -234,7 +234,7 @@ namespace LearningSystem.DAL.Migrations
                             Id = 5,
                             CourseId = 5,
                             Grade = 92.5m,
-                            GradeDate = new DateTime(2024, 9, 23, 23, 35, 13, 317, DateTimeKind.Local).AddTicks(8535),
+                            GradeDate = new DateTime(2024, 9, 24, 23, 41, 27, 346, DateTimeKind.Local).AddTicks(9173),
                             GradeLetter = "A",
                             TraineeId = 5
                         },
@@ -243,7 +243,7 @@ namespace LearningSystem.DAL.Migrations
                             Id = 6,
                             CourseId = 6,
                             Grade = 80.0m,
-                            GradeDate = new DateTime(2024, 9, 23, 23, 35, 13, 317, DateTimeKind.Local).AddTicks(8547),
+                            GradeDate = new DateTime(2024, 9, 24, 23, 41, 27, 346, DateTimeKind.Local).AddTicks(9191),
                             GradeLetter = "B",
                             TraineeId = 6
                         },
@@ -252,7 +252,7 @@ namespace LearningSystem.DAL.Migrations
                             Id = 7,
                             CourseId = 7,
                             Grade = 74.5m,
-                            GradeDate = new DateTime(2024, 9, 23, 23, 35, 13, 317, DateTimeKind.Local).AddTicks(8559),
+                            GradeDate = new DateTime(2024, 9, 24, 23, 41, 27, 346, DateTimeKind.Local).AddTicks(9209),
                             GradeLetter = "C",
                             TraineeId = 7
                         },
@@ -261,7 +261,7 @@ namespace LearningSystem.DAL.Migrations
                             Id = 8,
                             CourseId = 8,
                             Grade = 89.0m,
-                            GradeDate = new DateTime(2024, 9, 23, 23, 35, 13, 317, DateTimeKind.Local).AddTicks(8571),
+                            GradeDate = new DateTime(2024, 9, 24, 23, 41, 27, 346, DateTimeKind.Local).AddTicks(9228),
                             GradeLetter = "B",
                             TraineeId = 8
                         },
@@ -270,7 +270,7 @@ namespace LearningSystem.DAL.Migrations
                             Id = 9,
                             CourseId = 9,
                             Grade = 95.0m,
-                            GradeDate = new DateTime(2024, 9, 23, 23, 35, 13, 317, DateTimeKind.Local).AddTicks(8582),
+                            GradeDate = new DateTime(2024, 9, 24, 23, 41, 27, 346, DateTimeKind.Local).AddTicks(9246),
                             GradeLetter = "A",
                             TraineeId = 9
                         },
@@ -279,7 +279,7 @@ namespace LearningSystem.DAL.Migrations
                             Id = 10,
                             CourseId = 10,
                             Grade = 91.5m,
-                            GradeDate = new DateTime(2024, 9, 23, 23, 35, 13, 317, DateTimeKind.Local).AddTicks(8595),
+                            GradeDate = new DateTime(2024, 9, 24, 23, 41, 27, 346, DateTimeKind.Local).AddTicks(9266),
                             GradeLetter = "A",
                             TraineeId = 10
                         });
@@ -398,9 +398,7 @@ namespace LearningSystem.DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("DepartmentId")
-                        .IsUnique()
-                        .HasFilter("[DepartmentId] IS NOT NULL");
+                    b.HasIndex("DepartmentId");
 
                     b.HasIndex("DepartmentId1");
 
